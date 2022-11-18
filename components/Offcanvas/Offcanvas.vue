@@ -21,9 +21,9 @@
       </svg>
     </button>
     <div class="OffcanvasNav" :class="[show ? '  translate-x-full ' : ' translate-x-0  ']">
-      <NuxtLink @click="show = !show" href="/" class="inicio"> <span>Inicio</span> </NuxtLink>
-      <NuxtLink @click="show = !show" href="/galeria" class="galeria"> <span>Imágenes</span> </NuxtLink>
-      <NuxtLink @click="show = !show" href="/lab/dall-e" class="dall-e"> <span>Dall-e</span> </NuxtLink>
+      <NuxtLink @click="show = !show" href="/" class="btn yellow"> <span>Inicio</span> </NuxtLink>
+      <NuxtLink @click="show = !show" href="/galeria" class="btn blue"> <span>Imágenes</span> </NuxtLink>
+      <NuxtLink @click="show = !show" href="/lab/dall-e" class="btn red"> <span>Dall-e</span> </NuxtLink>
     </div>
   </div>
 </template>
@@ -38,15 +38,4 @@ const show = ref(true);
   @apply fixed right-0 text-center shadow-2xl font-mono text-2xl space-y-12 top-0 bottom-0 bg-gray-900 text-white duration-700 w-64 p-3 z-[1000] flex justify-start pt-12 flex-col;
 }
 
-.OffcanvasNav a.inicio {
-  @apply hover:text-amber-400;
-}
-
-.OffcanvasNav a.dall-e {
-  @apply hover:text-red-400;
-}
-
-.OffcanvasNav a.galeria {
-  @apply hover:text-blue-400;
-}
 </style>

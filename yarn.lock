@@ -289,6 +289,16 @@
   resolved "https://registry.yarnpkg.com/@esbuild/linux-loong64/-/linux-loong64-0.15.14.tgz#1221684955c44385f8af34f7240088b7dc08d19d"
   integrity sha512-eQi9rosGNVQFJyJWV0HCA5WZae/qWIQME7s8/j8DMvnylfBv62Pbu+zJ2eUDqNf2O4u3WB+OEXyfkpBoe194sg==
 
+"@fontsource/space-mono@4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/space-mono/-/space-mono-4.5.10.tgz#f7e8782326cb31624332b98a67cd88c031cdc63e"
+  integrity sha512-OTrWNdcPp01bZjEbSu52vMu9PaReUFylHAMI4lctKVbYUnm+e7a4eG6YcnRvDrJEMYHBDtEWLAsqGVldV5r1EQ==
+
+"@fontsource/yeseva-one@4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/yeseva-one/-/yeseva-one-4.5.10.tgz#b7cd2dac86e946476840b249a4ecd5c7fa9fe2ec"
+  integrity sha512-W+cylFcTAS5bqtQA/tg5jecOLcA4fl82AbxItToJFReei4fq7GoHCBLgLohMQxr4rXvTe4zBmPIWd0jy8Ceorw==
+
 "@headlessui/vue@^1.7.4":
   version "1.7.4"
   resolved "https://registry.yarnpkg.com/@headlessui/vue/-/vue-1.7.4.tgz#c554e9ac893a2ec2f58eb8b6b9d80b8be03c5d0e"

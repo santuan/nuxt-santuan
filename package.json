@@ -14,6 +14,8 @@
     "@tailwindcss/typography": "^0.5.8"
   },
   "dependencies": {
+    "@fontsource/space-mono": "4.5.10",
+    "@fontsource/yeseva-one": "4.5.10",
     "@headlessui/vue": "^1.7.4",
     "@img-comparison-slider/vue": "^7.7.0",
     "@nuxtjs/tailwindcss": "^6.1.3",
