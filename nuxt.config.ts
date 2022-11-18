@@ -7,14 +7,35 @@ export default defineNuxtConfig({
     pageTransition: { name: "page", mode: "out-in" },
   },
   image: {
-    domains: ['res.cloudinary.com']
+    domains: ["res.cloudinary.com"],
   },
   css: [
     // SCSS file in the project
-    '~/assets/css/main.css'
+    "~/assets/css/main.css",
   ],
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxt/image-edge',
-  ],
+  tailwindcss: {
+    config: {
+      /* Extend the Tailwind config here */
+      theme: {
+        fontFamily: {
+          serif: ["Yeseva One", "serif"],
+          mono: ["Space Mono", "mono"],
+        },
+      },
+      plugins: [
+        require('@tailwindcss/typography'),
+      ],
+    }
+  },
+  googleFonts: {
+    families: {
+      'Yeseva+One': true,
+      'Space+Mono': [100, 300],
+    }
+  },
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/image-edge"],
+  buildModules: ["@nuxtjs/google-fonts"],
+  build: {
+    transpile: ["@headlessui/vue"],
+  },
 });

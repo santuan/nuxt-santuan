@@ -9,7 +9,9 @@
   },
   "devDependencies": {
     "@nuxt/image-edge": "^1.0.0-27809804.194d2d6",
-    "nuxt": "3.0.0"
+    "@nuxtjs/google-fonts": "^2.0.0",
+    "nuxt": "3.0.0",
+    "@tailwindcss/typography": "^0.5.8"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.4",

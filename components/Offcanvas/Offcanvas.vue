@@ -23,7 +23,7 @@
     <div class="OffcanvasNav" :class="[show ? '  translate-x-full ' : ' translate-x-0  ']">
       <NuxtLink @click="show = !show" href="/" class="inicio"> <span>Inicio</span> </NuxtLink>
       <NuxtLink @click="show = !show" href="/galeria" class="galeria"> <span>Imágenes</span> </NuxtLink>
-      <NuxtLink @click="show = !show" href="/lab/dall-e" class="dall-e"> <span>dall-e</span> </NuxtLink>
+      <NuxtLink @click="show = !show" href="/lab/dall-e" class="dall-e"> <span>Dall-e</span> </NuxtLink>
     </div>
   </div>
 </template>

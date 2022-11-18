@@ -1,10 +1,10 @@
 <template>
-    <div>
-        <LabDalleHero/>
-        <div class="w-64 mx-auto">
-            <LabCarouselCarousel01/>
-        </div>
-        <LabCompareSection/>
-        <LabDalleGrid/>
-    </div>
+  <div>
+    <LabDropdownDalle />
+    <LabDalleHero />
+    <LabCompareSection />
+    <LabCarouselSection />
+    <LabTextVariationSection />
+    <LabDalleGrid />
+  </div>
 </template>

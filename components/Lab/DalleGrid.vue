@@ -1,126 +1,58 @@
 <template>
   <div
     class="grid grid-cols-2 gap-1 p-1 from-yellow-400 bg-gradient-to-b via-yellow-500 to-gray-900 scroll-mt-24 md:grid-cols-3"
-    id="ejemplo1"
+    id="ejemplo4"
   >
-    <nuxt-picture
-      :placeholder="15"
-      format="webp"
-      alt="Pintura de un rey conejo"
-      src="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654748378/santuan/history/01_13_spdx0t.webp"
+    <LabModalImage
+      title="Pintura de un rey conejo"
+      img="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654748378/santuan/history/01_13_spdx0t.webp"
+    />
+    <LabModalImage
+      title="Un congreso de gatos votando meow"
+      img="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654747690/santuan/history/01_0_tes00q.webp"
     />
 
-    <nuxt-picture
-      :placeholder="15"
-      format="webp"
-      width="800"
-      height="800"
-      alt="Un congreso de gatos votando meow "
-      title="Un congreso de gatos votando meow "
-      class="object-cover hover:opacity-80 duration-300 md:rounded-tl-2xl cursor-pointer overflow-hidden object-center w-full xl:h-[495px]"
-      src="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654747690/santuan/history/01_0_tes00q.webp"
-    />
-    <nuxt-picture
-      :placeholder="15"
-      format="webp"
-      width="800"
-      height="800"
-      alt="Render - Un oceano repleto de barquitos bajo una constelación de galaxias"
+    <LabModalImage
       title="Render - Un oceano repleto de barquitos bajo una constelación de galaxias"
-      class="object-cover hover:opacity-80 duration-300 cursor-pointer object-center w-full xl:h-[495px]"
-      src="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654747810/santuan/history/01_19_jh8ikd.jpg"
+      img="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654747810/santuan/history/01_19_jh8ikd.jpg"
     />
-    <nuxt-picture
-      :placeholder="15"
-      format="webp"
-      width="800"
-      height="800"
-      alt="Una guitarra con una planta creciendo en su interior"
+    <LabModalImage
       title="Una guitarra con una planta creciendo en su interior"
-      class="object-cover hover:opacity-80 duration-300 col-span-2 md:col-span-1 object-center w-full cursor-pointer xl:h-[495px]"
-      src="https://res.cloudinary.com/srcouto/image/upload/c_scale,h_1024,q_auto:eco/v1654748288/santuan/history/01_75_giaebn.jpg"
+      img="https://res.cloudinary.com/srcouto/image/upload/c_scale,h_1024,q_auto:eco/v1654748288/santuan/history/01_75_giaebn.jpg"
     />
-    <nuxt-picture
-      :placeholder="15"
-      format="webp"
-      width="800"
-      height="800"
-      alt="Pintura de Una ciudad de tardenoche con una luna brillando como un sol"
+    <LabModalImage
       title="Pintura de Una ciudad de tardenoche con una luna brillando como un sol"
-      class="object-cover hover:opacity-80 duration-300 object-center w-full cursor-pointer xl:h-[495px]"
-      src="https://res.cloudinary.com/srcouto/image/upload/c_scale,h_1024,q_auto:eco/v1654748221/santuan/history/01_79_bewrli.webp"
+      img="https://res.cloudinary.com/srcouto/image/upload/c_scale,h_1024,q_auto:eco/v1654748221/santuan/history/01_79_bewrli.webp"
     />
-    <nuxt-picture
-      :placeholder="15"
-      format="webp"
-      width="800"
-      height="800"
-      alt="Arte digital de una niña sobre una casa en el arbol."
+    <LabModalImage
       title="Arte digital de una niña sobre una casa en el arbol."
-      class="object-cover hover:opacity-80 duration-300 object-center w-full cursor-pointer xl:h-[495px]"
-      src="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654747800/santuan/history/ImageSequence032_mkwbse.jpg"
+      img="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654747800/santuan/history/ImageSequence032_mkwbse.jpg"
     />
-    <nuxt-picture
-      :placeholder="15"
-      format="webp"
-      width="800"
-      height="800"
-      alt="Un conejo escuchando la radio - arte digital "
+    <LabModalImage
       title="Un conejo escuchando la radio - arte digital "
-      class="object-cover hover:opacity-80 duration-300 cursor-pointer overflow-hidden object-center w-full xl:h-[495px]"
-      src="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654747651/santuan/history/01_4_fitcxc.webp"
+      img="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654747651/santuan/history/01_4_fitcxc.webp"
     />
 
-    <nuxt-picture
-      :placeholder="15"
-      format="webp"
-      width="800"
-      height="800"
-      alt="Arte digital de una habitacion con una ventana gigante con una persona flotando en una nube"
+    <LabModalImage
       title="Arte digital de una habitacion con una ventana gigante con una persona flotando en una nube"
-      class="object-cover hover:opacity-80 duration-300 object-center w-full cursor-pointer xl:h-[495px]"
-      src="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654747878/santuan/history/ImageSequence030_wupe68.webp"
+      img="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654747878/santuan/history/ImageSequence030_wupe68.webp"
     />
-    <nuxt-picture
-      :placeholder="15"
-      format="webp"
-      width="800"
-      height="800"
-      alt="Arte digital de una habitacion con una ventana gigante con una persona flotando en una nube"
+    <LabModalImage
       title="Arte digital de una habitacion con una ventana gigante con una persona flotando en una nube"
-      class="object-cover hover:opacity-80 duration-300 object-center w-full cursor-pointer xl:h-[495px]"
-      src="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654748340/santuan/history/004_6_oox3dv.webp"
+      img="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654748340/santuan/history/004_6_oox3dv.webp"
     />
-    <nuxt-picture
-      :placeholder="15"
-      format="webp"
-      width="800"
-      height="800"
-      alt="Arte digital de una habitacion con una ventana gigante con una persona flotando en una nube"
+    <LabModalImage
       title="Arte digital de una habitacion con una ventana gigante con una persona flotando en una nube"
-      class="object-cover hover:opacity-80 duration-300 object-center w-full cursor-pointer xl:h-[495px]"
-      src="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654747903/santuan/history/03_2_tur5ci.webp"
+      img="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654747903/santuan/history/03_2_tur5ci.webp"
     />
-    <nuxt-picture
-      :placeholder="15"
-      format="webp"
-      width="800"
-      height="800"
-      alt="Arte digital de una habitacion con una ventana gigante con una persona flotando en una nube"
+    <LabModalImage
       title="Arte digital de una habitacion con una ventana gigante con una persona flotando en una nube"
-      class="object-cover hover:opacity-80 duration-300 object-center w-full cursor-pointer xl:h-[495px]"
-      src="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654747866/santuan/history/01_49_blcwpq.webp"
+      img="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654747866/santuan/history/01_49_blcwpq.webp"
     />
 
-    <nuxt-picture
-      :placeholder="15"
-      format="webp"
-      width="800"
-      height="800"
-      alt="Arte digital de una habitacion con una ventana gigante con una persona flotando en una nube"
+    <LabModalImage
       title="Arte digital de una habitacion con una ventana gigante con una persona flotando en una nube"
-      class="object-cover hover:opacity-80 duration-300 object-center w-full cursor-pointer xl:h-[495px]"
-      src="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654748282/santuan/history/01_24_atkuzw.webp"
+      img="https://res.cloudinary.com/srcouto/image/upload/q_auto:eco/v1654748282/santuan/history/01_24_atkuzw.webp"
     />
   </div>
 </template>

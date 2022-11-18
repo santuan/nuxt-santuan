@@ -1,7 +1,7 @@
 <template>
   <div>
     <NuxtLayout>
-    <NuxtPage  />
+      <NuxtPage />
     </NuxtLayout>
   </div>
 </template>
@@ -9,7 +9,7 @@
 <style>
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.4s;
+  transition: all 1.3s;
 }
 .page-enter-from,
 .page-leave-to {
