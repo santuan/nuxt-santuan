@@ -19,7 +19,7 @@
     <nuxt-img :placeholder="15" format="webp" :alt="title" :src="img" />
   </div>
   <TransitionRoot appear :show="isOpen" as="template">
-    <Dialog as="div" @close="closeModal" class="relative z-[99999]">
+    <Dialog as="div" @close="closeModal" class="fixed inset-0 z-[99999]">
       <TransitionChild
         as="template"
         enter="duration-300 ease-out"

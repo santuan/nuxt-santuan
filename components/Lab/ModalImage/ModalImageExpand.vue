@@ -19,7 +19,7 @@
     <nuxt-img :placeholder="15" format="webp" :alt="title" :src="img" />
   </div>
   <TransitionRoot appear :show="isOpen" as="template">
-    <Dialog as="div" @close="closeModal" class="relative z-[99999]">
+    <Dialog as="div" @close="closeModal" class="fixed inset-0 z-[99999]">
       <TransitionChild
         as="template"
         enter="duration-300 ease-out"
@@ -29,9 +29,9 @@
         leave-from="opacity-100"
         leave-to="opacity-0"
       >
-        <div class="fixed inset-0 bg-gray-900/80 backdrop-blur-xl cursor-pointer" />
+        <div class="absolute inset-0 bg-gray-900/80 backdrop-blur-xl cursor-pointer" />
       </TransitionChild>
-      <div class="fixed inset-0 overflow-y-auto">
+      <div class="absolute inset-0 overflow-y-auto">
         <div class="flex min-h-full items-center justify-center p-4 text-center">
           <TransitionChild
             as="template"
