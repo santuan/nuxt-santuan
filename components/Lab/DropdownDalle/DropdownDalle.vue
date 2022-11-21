@@ -4,7 +4,7 @@ import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/vue";
 
 <template>
   <div
-    className="fixed bottom-0 md:bottom-auto moveUp duration-1000 top-auto md:top-1 md:right-12 right-0 z-50 w-96 m-3 text-right"
+    className="fixed bottom-0 md:bottom-auto moveUp duration-1000 top-auto md:top-1 md:right-12 right-0 z-50 w-80 m-3 text-right"
   >
     <Menu as="div" class="relative inline-block text-left">
       <div>
@@ -32,7 +32,7 @@ import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/vue";
         leave-to-class="transform scale-95 opacity-0"
       >
         <MenuItems
-          class="absolute right-0 mt-2 text-white origin-top-right divide-y divide-gray-100 rounded-md shadow-lg w-96 bg-gray-900/80 bottom-12 md:bottom-auto md:top-12 ring-1 ring-black ring-opacity-5 focus:outline-none"
+          class="absolute right-0 mt-2 text-white origin-top-right divide-y divide-gray-100 rounded-md shadow-lg w-80 bg-gray-900/80 bottom-12 md:bottom-auto md:top-12 ring-1 ring-black ring-opacity-5 focus:outline-none"
         >
           <div class="flex flex-col items-center justify-center px-2 py-2 space-y-3">
             <MenuItem>
