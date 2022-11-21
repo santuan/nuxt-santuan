@@ -44,12 +44,10 @@
           >
             <DialogPanel
               :class="[expandImage ? ' max-w-4xl  ' : 'max-w-2xl']"
-              class="w-full  max-w-2xl font-rubik text-left duration-1000 transform overflow-hidden align-middle shadow-xl mx-auto transition-all"
+              class="w-full max-w-2xl font-rubik text-left duration-1000 transform overflow-hidden align-middle shadow-xl mx-auto transition-all"
             >
               <DialogTitle as="h2" class="hidden"> How to play </DialogTitle>
-              <button @click="expandImage = !expandImage" class="cursor-pointer hover:opacity-100 opacity-80 duration-300 " >
-                <nuxt-img :placeholder="15" format="webp" :alt="title" :src="img" />
-              </button>
+              <nuxt-img :placeholder="15" format="webp" :alt="title" :src="img" />
               <div class="absolute right-0 m-2 top-0">
                 <button type="button" @click="closeModal" class="btn !hidden md:!flex !p-2">
                   <svg

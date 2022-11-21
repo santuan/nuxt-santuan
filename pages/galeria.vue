@@ -9,7 +9,7 @@
         </NuxtLink>
       </div>
       <!-- <GalleryHero /> -->
-      <div class="relative w-full bg-black bg-pattern scroll-mt-16">
+      <div class="relative w-full pt-12 bg-black bg-pattern scroll-mt-16">
         <Gallery />
       </div>
     </div>
