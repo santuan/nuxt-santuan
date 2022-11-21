@@ -1,6 +1,7 @@
 <template>
   <div>
     <NuxtLayout>
+      <NuxtLoadingIndicator color="#f14c44" />
       <NuxtPage />
     </NuxtLayout>
   </div>
@@ -15,5 +16,7 @@
 .page-leave-to {
   opacity: 0;
   filter: blur(1rem);
+
 }
+
 </style>
