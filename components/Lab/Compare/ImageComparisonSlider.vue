@@ -61,11 +61,11 @@ export default defineComponent({
 .ImageComparison {
   --divider-width: 1px;
   --divider-color: #6e2e8a;
-  @apply min-h-[300px] md:min-h-[450px];
+  @apply min-h-[300px] md:min-h-[450px] cursor-col-resize;
 }
 
 .ImageComparison:hover .handle {
-  @apply scale-125;
+  @apply scale-125 ;
 }
 .before,
 .after {
