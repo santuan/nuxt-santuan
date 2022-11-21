@@ -142,12 +142,7 @@
       />
     </div>
 
-    <div class="aspect-square w-full h-full">
-      <LabModalImageExpand
-        title="item"
-        img="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1629232358/stn-renders/18_ec7kli.jpg"
-      />
-    </div>
+
 
     <div class="aspect-square w-full h-full">
       <LabModalImageExpand
@@ -167,6 +162,13 @@
       <LabModalImageExpand
         title="item"
         img="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1629233957/stn-renders/01_ujdfvc.jpg"
+      />
+    </div>
+
+    <div class="aspect-square md:aspect-video md:col-span-2 w-full h-full">
+      <LabModalImageExpand
+        title="item"
+        img="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1629232358/stn-renders/18_ec7kli.jpg"
       />
     </div>
 

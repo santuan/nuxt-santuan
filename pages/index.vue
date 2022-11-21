@@ -7,7 +7,7 @@
         <h2 class="w-full font-serif text-4xl text-left text-white md:text-6xl opacity-70">
           <div class="block w-full mt-2 font-bold animate__animated animate__fadeIn animate__slower">
             <NuxtLink to="/galeria" class="text-white hover:opacity-75 md:text-red-400 md:hover:text-red-500">
-              Imágenes.</NuxtLink
+              Galería.</NuxtLink
             >
           </div>
         </h2>
