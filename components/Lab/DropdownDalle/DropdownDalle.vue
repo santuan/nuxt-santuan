@@ -4,7 +4,7 @@ import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/vue";
 
 <template>
   <div
-    className="fixed bottom-0 md:bottom-auto moveUp duration-1000 top-auto md:top-1 md:right-12 right-0 z-50 w-64 m-3 text-right"
+    className="fixed bottom-0 md:bottom-auto moveUp duration-1000 top-auto md:top-1 md:right-12 right-0 z-50 w-80 m-3 text-right"
   >
     <Menu as="div" class="relative inline-block text-left">
       <div>
