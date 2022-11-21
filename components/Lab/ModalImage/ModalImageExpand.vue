@@ -1,6 +1,6 @@
 <template>
   <div class="relative object-cover h-full">
-    <button type="button" @click="openModal" class="btn !hidden lg:!flex !p-2 absolute right-0 m-3 top-0">
+    <button type="button" @click="openModal" aria-label="Expand Picture" class="btn !hidden lg:!flex !p-2 absolute right-0 m-3 top-0">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -61,7 +61,7 @@
                 <nuxt-img :placeholder="15" format="webp" :alt="title" :src="img" />
               </button>
               <div class="absolute right-0 m-2 top-0">
-                <button type="button" @click="closeModal" class="btn !hidden lg:!flex !p-2">
+                <button type="button" @click="closeModal" aria-label="Expand Picture" class="btn !hidden lg:!flex !p-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

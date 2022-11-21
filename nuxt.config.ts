@@ -4,6 +4,14 @@ export default defineNuxtConfig({
     shim: false,
   },
   app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=500, initial-scale=1',
+      title: 'STN',
+      meta: [
+        { name: 'Diseño y software libre', content: 'MDiseño y software libre.' }
+      ],
+    },
     pageTransition: { name: "page", mode: "out-in" },
   },
   image: {
