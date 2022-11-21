@@ -22,7 +22,7 @@ const props = defineProps({
 
 <template>
   <div class="relative object-cover">
-    <button type="button" ref="ref" v-bind="api.triggerProps" class="btn !hidden md:!flex !p-2 absolute right-0 m-3 top-0">
+    <button type="button" ref="ref" v-bind="api.triggerProps" class="btn !p-2 absolute right-0 m-3 top-0">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -55,7 +55,7 @@ const props = defineProps({
             <nuxt-img :placeholder="15" format="webp" :alt="title" :src="img" />
           </button>
           <div class="absolute right-0 m-2 top-0">
-            <button type="button" v-bind="api.closeButtonProps" class="btn !hidden md:!flex !p-2">
+            <button type="button" v-bind="api.closeButtonProps" class="btn !p-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
