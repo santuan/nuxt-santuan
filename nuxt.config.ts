@@ -11,7 +11,6 @@ export default defineNuxtConfig({
         lang: 'es'
       },
       charset: 'utf-8',
-      viewport: 'width=500, initial-scale=1',
       title: 'STN',
       meta: [
         // <meta name="description" content="My amazing site">
