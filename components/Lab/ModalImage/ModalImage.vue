@@ -51,18 +51,14 @@
                 <nuxt-img :placeholder="15" format="webp" :alt="title" :src="img" />
               </button>
               <div class="absolute right-0 m-2 top-0">
-                <button
-                  type="button"
-                  class="p-3 bg-black/30 hover:bg-black/50 duration-300 rounded-full"
-                  @click="closeModal"
-                >
+                <button type="button" @click="closeModal" class="btn !hidden md:!flex !p-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="w-6 h-6"
+                    class="w-4 h-4"
                   >
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg>
