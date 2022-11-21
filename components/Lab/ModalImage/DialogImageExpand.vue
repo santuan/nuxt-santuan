@@ -43,16 +43,20 @@ const props = defineProps({
       format="webp"
       :alt="title"
       :src="img"
-      class="md:w-full h-96 object-center md:h-[80vh] object-cover"
+      class="md:w-full h-96 object-center  object-cover"
     />
   </div>
   <Teleport to="body">
-    <div v-if="api.isOpen" class="fixed inset-0 z-[99999] flex justify-center items-center">
+    <div v-if="api.isOpen" :class="[api.isOpen ? ' bg-scrolling-element-when-modal-active ' : ' ']" class="fixed inset-0 z-[99999] flex justify-center items-center">
       <div v-bind="api.backdropProps" class="fixed inset-0 bg-gray-800/80 backdrop-blur-2xl" />
       <div v-bind="api.underlayProps">
-        <div v-bind="api.contentProps" :class="[expandImage ? ' max-w-7xl ' : 'max-w-2xl']" class="duration-1000 mx-auto relative z-10">
-          <button @click="expandImage = !expandImage" class="cursor-pointer  duration-300">
-            <nuxt-img :placeholder="15" format="webp" :alt="title" :src="img" />
+        <div
+          v-bind="api.contentProps"
+          :class="[expandImage ? ' max-w-7xl ' : 'max-w-2xl']"
+          class="duration-1000 mx-auto relative z-10"
+        >
+          <button @click="expandImage = !expandImage" class="cursor-pointer duration-300">
+            <nuxt-img :placeholder="15" format="webp" :alt="title" :src="img" class="md:w-full h-96 object-center md:h-[80vh] object-cover" />
           </button>
           <div class="absolute right-0 m-2 top-0">
             <button type="button" v-bind="api.closeButtonProps" class="btn !p-2">
@@ -73,3 +77,14 @@ const props = defineProps({
     </div>
   </Teleport>
 </template>
+
+<style>
+.bg-scrolling-element-when-modal-active {
+    /* when modal active */
+    touch-action: none;
+    -webkit-overflow-scrolling: none;
+    overflow: hidden;
+    /* Other browsers */
+    overscroll-behavior: none;
+}
+</style>
