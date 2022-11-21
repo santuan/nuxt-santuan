@@ -55,7 +55,8 @@
               <DialogTitle as="h2" class="hidden"> How to play </DialogTitle>
               <button
                 @click="expandImage = !expandImage"
-                class="cursor-zoom-in	 hover:opacity-100 opacity-80 duration-300"
+                class="	 hover:opacity-100 opacity-80 duration-300"
+                :class="[expandImage ? ' cursor-zoom-in ' : ' cursor-zoom-out ']"
               >
                 <nuxt-img :placeholder="15" format="webp" :alt="title" :src="img" />
               </button>
