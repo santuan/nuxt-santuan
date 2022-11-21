@@ -3,13 +3,19 @@ export default defineNuxtConfig({
   typescript: {
     shim: false,
   },
+  
   app: {
+    
     head: {
+      htmlAttrs: {
+        lang: 'es'
+      },
       charset: 'utf-8',
       viewport: 'width=500, initial-scale=1',
       title: 'STN',
       meta: [
-        { name: 'Diseño y software libre', content: 'MDiseño y software libre.' }
+        // <meta name="description" content="My amazing site">
+        { name: 'description', content: 'Diseño y software libres' }
       ],
     },
     pageTransition: { name: "page", mode: "out-in" },
