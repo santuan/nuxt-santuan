@@ -56,7 +56,7 @@
               <button
                 @click="expandImage = !expandImage"
                 class="	 hover:opacity-100 opacity-80 duration-300"
-                :class="[expandImage ? ' cursor-zoom-in ' : ' cursor-zoom-out ']"
+                :class="[expandImage ? ' cursor-zoom-out ' : ' cursor-zoom-in ']"
               >
                 <nuxt-img :placeholder="15" format="webp" :alt="title" :src="img" />
               </button>
