@@ -1,6 +1,6 @@
 <template>
-  <div class="relative">
-    <button type="button" @click="openModal" class="btn !p-2 absolute right-0 m-3 top-0">
+  <div class="relative object-cover">
+    <button type="button" @click="openModal" class="btn !hidden md:!flex !p-2 absolute right-0 m-3 top-0">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -16,7 +16,7 @@
         />
       </svg>
     </button>
-    <nuxt-img :placeholder="15" format="webp" :alt="title" :src="img" />
+    <nuxt-img :placeholder="15" format="webp" :alt="title" :src="img" class="md:w-full h-96 object-center md:h-[80vh] object-cover" />
   </div>
   <TransitionRoot appear :show="isOpen" as="template">
     <Dialog as="div" @close="closeModal" class="fixed inset-0 z-[99999]">
@@ -43,8 +43,8 @@
             leave-to="opacity-0 scale-95"
           >
             <DialogPanel
-              :class="[expandImage ? ' max-w-full  ' : 'max-w-2xl']"
-              class="w-full  max-w-2xl font-rubik text-left duration-1000 transform overflow-hidden align-middle shadow-xl mx-auto transition-all"
+              :class="[expandImage ? ' max-w-7xl ' : 'max-w-2xl']"
+              class="w-full   font-rubik text-left duration-1000 transform overflow-hidden align-middle shadow-xl mx-auto transition-all"
             >
               <DialogTitle as="h2" class="hidden"> How to play </DialogTitle>
               <button @click="expandImage = !expandImage" class="cursor-pointer hover:opacity-100 opacity-80 duration-300 " >
