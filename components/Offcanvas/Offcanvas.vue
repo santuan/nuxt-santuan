@@ -24,8 +24,8 @@
     </button>
     <div class="OffcanvasNav" :class="[show ? '  translate-x-full ' : ' translate-x-0  ']">
       <NuxtLink @click="show = !show" href="/" class="btn h-24 yellow"> <span>Inicio</span> </NuxtLink>
-      <NuxtLink @click="show = !show" href="/galeria" class="btn h-24 red"> <span>Imágenes</span> </NuxtLink>
-      <NuxtLink @click="show = !show" href="/lab/dall-e" class="btn h-24 blue"> <span>Dall-e</span> </NuxtLink>
+      <NuxtLink @click="show = !show" href="/galeria" class="btn h-24 red"> <span>Hechos con Blender</span> </NuxtLink>
+      <NuxtLink @click="show = !show" href="/lab/dall-e" class="btn h-24 blue"> <span>Hechos con <br/> Dall-E</span> </NuxtLink>
     </div>
   </div>
 </template>
