@@ -41,12 +41,6 @@
       />
     </div>
 
-    <div class="col-span-3">
-      <img
-        title="Ancho de banda de la conciencia"
-        img="https://res.cloudinary.com/srcouto/image/upload/q_auto:good/v1630559191/stn-renders/untitled_i27pcx.jpg"
-      />
-    </div>
 
     <div class="aspect-square">
       <LabModalImage

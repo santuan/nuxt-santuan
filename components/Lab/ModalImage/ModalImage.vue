@@ -1,6 +1,6 @@
 <template>
-  <div class="relative">
-    <button type="button" @click="openModal" class="btn !p-2 absolute right-0 m-3 top-0">
+  <div class="relative" @keyup.esc="openModal = !openModal">
+    <button type="button" @click="openModal = !openModal" class="btn !p-2 absolute right-0 m-3 top-0">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -16,49 +16,53 @@
         />
       </svg>
     </button>
-    <nuxt-img :placeholder="15" format="webp" alt="Pintura de un rey conejo" :alt="title" :src="img" />
-  </div>
-  <TransitionRoot appear :show="isOpen" as="template">
-    <Dialog as="div" @close="closeModal" class="relative z-[999]">
-      <TransitionChild
-        as="template"
-        enter="duration-300 ease-out"
-        enter-from="opacity-0"
-        enter-to="opacity-100"
-        leave="duration-200 ease-in"
-        leave-from="opacity-100"
-        leave-to="opacity-0"
+    <nuxt-img :placeholder="15" format="webp"  :alt="title" :src="img" />
+    <Teleport to="body">
+      <button
+      @click="openModal = !openModal"
+       :class="[openModal ? ' opacity-100 z-[999998]  ' : 'opacity-0 -z-10']" class="bg-gray-900/80 duration-300 backdrop-blur-xl fixed inset-0"/>
+      <div
+        tabindex="-1"
+        :class="[openModal ? ' opacity-100 z-[999999]  ' : 'opacity-0 -z-10']"
+        aria-hidden="true"
+        class="overflow-hidden duration-300 fixed w-full inset-0  flex  justify-center items-center"
       >
-        <div class="fixed inset-0 bg-gray-800 bg-opacity-80 backdrop-blur-2xl" />
-      </TransitionChild>
-      <div class="fixed inset-0 overflow-y-auto">
-        <div class="flex min-h-full items-center justify-center p-4 text-center">
-          <TransitionChild
-            as="template"
-            enter="duration-300 ease-out"
-            enter-from="opacity-0 scale-95"
-            enter-to="opacity-100 scale-100"
-            leave="duration-200 ease-in"
-            leave-from="opacity-100 scale-100"
-            leave-to="opacity-0 scale-95"
-          >
-            <DialogPanel class="w-full max-w-2xl transform overflow-hidden align-middle shadow-xl transition-all">
-              <DialogTitle as="h2" class="hidden"> How to play </DialogTitle>
-              <div>
-                <img :src="img" :alt="title" class="w-full" />
-              </div>
-            </DialogPanel>
-          </TransitionChild>
+        <div class="relative w-full h-full max-w-xl md:h-auto">
+          <div class="relative bg-white rounded-lg shadow">
+            <div class="flex flex-col items-start justify-between ">
+              <nuxt-img :placeholder="15" format="webp" :alt="title" :src="img" />
+              <button
+                type="button"
+                class="text-gray-400 absolute right-2 top-2 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
+                data-modal-toggle="defaultModal"
+                @click="openModal = !openModal"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="sr-only">Cerrar</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </Dialog>
-  </TransitionRoot>
+    </Teleport>
+  </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
-import { TransitionRoot, TransitionChild, Dialog, DialogPanel, DialogTitle } from "@headlessui/vue";
-// import image
+const openModal = ref(false);
 
 const props = defineProps({
   img: {
@@ -72,13 +76,4 @@ const props = defineProps({
     default: "",
   },
 });
-
-const isOpen = ref(false);
-
-function closeModal() {
-  isOpen.value = false;
-}
-function openModal() {
-  isOpen.value = true;
-}
 </script>

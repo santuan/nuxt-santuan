@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="modals">
     <Offcanvas/>
     <AppHeader />
     <main class="flex flex-col w-full relative z-[99]">
