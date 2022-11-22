@@ -64,7 +64,7 @@
               width="500"
               height="500"
               alt="3d render de Cuadrado blanco en cubos rojos"
-              src="https://res.cloudinary.com/srcouto/image/upload/c_scale,h_650,q_auto:eco/v1654817028/santuan/tokens/untitled_i27pcx_evplpa.jpg"
+              src="https://res.cloudinary.com/srcouto/image/upload/c_fill,g_center,h_700,w_700,x_0/v1654817028/santuan/tokens/untitled_i27pcx_evplpa.jpg"
             />
           </div>
         </div>
