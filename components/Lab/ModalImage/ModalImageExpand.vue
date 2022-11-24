@@ -49,7 +49,7 @@
             leave-to="opacity-0 scale-95"
           >
             <DialogPanel
-              :class="[expandImage ? ' max-w-full ' : 'max-w-2xl']"
+              :class="[expandImage ? ' max-w-6xl ' : 'max-w-2xl']"
               class="w-full font-rubik text-left duration-1000 transform overflow-hidden align-middle shadow-xl mx-auto transition-all"
             >
               <DialogTitle as="h2" class="hidden"> How to play </DialogTitle>
