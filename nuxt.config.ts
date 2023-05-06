@@ -1,20 +1,17 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   typescript: {
     shim: false,
   },
-  
   app: {
-    
     head: {
       htmlAttrs: {
-        lang: 'es'
+        lang: "es",
       },
-      charset: 'utf-8',
-      title: 'STN',
+      charset: "utf-8",
+      title: "STN",
       meta: [
         // <meta name="description" content="My amazing site">
-        { name: 'description', content: 'Diseño y software libres' }
+        { name: "description", content: "Diseño y software libres" },
       ],
     },
     pageTransition: { name: "page", mode: "out-in" },
