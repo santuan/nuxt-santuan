@@ -14,6 +14,8 @@ useHead({
     <LabCompareSection />
     <LabCarouselSection />
     <LabTextVariationSection />
-    <LabDalleGrid />
+    <ClientOnly>
+      <LabDalleGrid />
+    </ClientOnly>
   </div>
 </template>

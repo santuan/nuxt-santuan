@@ -8,21 +8,23 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/image-edge": "^1.0.0-28050764.aaee7ac",
-    "@nuxtjs/google-fonts": "3.0.0",
+    "@nuxtjs/google-fonts": "3.0.2",
     "@tailwindcss/typography": "0.5.9",
-    "nuxt": "3.4.3"
+    "nuxt": "3.7.0"
   },
   "dependencies": {
-    "@fontsource/space-mono": "4.5.12",
-    "@fontsource/yeseva-one": "4.5.10",
-    "@headlessui/vue": "1.7.13",
+    "@fontsource/space-mono": "5.0.9",
+    "@fontsource/yeseva-one": "5.0.8",
+    "@headlessui/vue": "1.7.16",
     "@img-comparison-slider/vue": "8.0.0",
-    "@nuxtjs/tailwindcss": "6.6.7",
-    "@zag-js/dialog": "0.7.0",
-    "@zag-js/vue": "0.7.0",
+    "@nuxt/image": "^1.0.0-rc.1",
+    "@nuxtjs/tailwindcss": "6.8.0",
+    "@tresjs/cientos": "^3.2.0",
+    "@tresjs/core": "^3.1.1",
     "animate.css": "4.1.1",
+    "glightbox": "^3.2.0",
     "swiper": "^9.2.4",
+    "three": "^0.155.0",
     "vue-compare-image": "0.2.0"
   }
 }

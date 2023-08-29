@@ -1,3 +1,32 @@
+
+<script>
+import GLightbox from "glightbox";
+
+export default {
+  name: "BaseGallery",
+  inheritAttrs: false,
+  props: {
+    items: Array,
+    galleryId: Number,
+  },
+  data() {
+    return {
+      lightbox: undefined,
+    };
+  },
+  mounted() {
+    this.$nextTick(function () {
+      this.initLightBoxes();
+    });
+  },
+  methods: {
+    initLightBoxes() {
+      this.lightbox = GLightbox();
+    },
+  },
+};
+</script>
+
 <template>
   <div class="grid md:grid-cols-3 w-full max-w-full gap-3 ">
     <div class="aspect-square w-full h-full" id="ejemploBlender">

@@ -43,7 +43,7 @@ export default defineNuxtConfig({
       plugins: [require("@tailwindcss/typography")],
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "@nuxt/image-edge"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/image"],
   build: {
     transpile: ["@headlessui/vue"],
   },
